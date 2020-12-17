@@ -35,7 +35,7 @@ class Resume extends Component {
                     <h5>Email</h5>
                     <p>gsrana480@gmail.com</p>
                     <h5>Web</h5>
-                    <p>mywebsite.com</p>
+                    <p>www.gsrana16.com</p>
                     {/*<h5> Download my resume</h5>
                     <BrowserRouter />
                         <Navigation>
