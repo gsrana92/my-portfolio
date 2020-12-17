@@ -23,6 +23,10 @@ class Projects extends Component {
                         <Button colored  href='https://github.com/gsrana92/indecision-app' target='_blank'>
                         Github
                         </Button>
+                        <Button colored href='https://master.d2to67m5isgnj4.amplifyapp.com/' target='_blank'>
+                        Demo
+                        </Button>
+
                         {/*<Button colored>Github</Button>
                         <Button colored>Github</Button> */}
                     </CardActions>
