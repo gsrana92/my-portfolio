@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import emailjs from 'emailjs-com';
-import { Grid, Cell, List, ListItem, ListItemContent } from 'react-mdl';
 
 class Contact extends Component {
   constructor(props) {
@@ -31,70 +30,139 @@ class Contact extends Component {
   };
   render() {
     return (
-      <div className="contact-body">
-        <Grid className="contact-grid">
-          <Cell col={6}>
-            <h2>Gaurav Rana </h2>
-            <img
-              src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png"
-              alt="avatar"
-              style={{ height: '250px' }}
-            />
-            <p style={{ width: '75%', margin: 'auto', paddingTop: '1em' }}>
-              Hi, I am a Computer Science graduate currently looking for
-              opportunity in Software Engineering. I have worked as a Data
-              Analyst in the past. Available for freelance opportunities.
-              Enthusiastic about software development, ReactJS and cloud
-              technology in particular AWS. In my free time I like to learn new
-              things and read fantasy and crime novels.
-            </p>
-          </Cell>
-          <Cell col={6}>
-            <h2>Contact Me</h2>
-            <form onSubmit={this.onSubmitEmail}>
-              <div className="contact-div"></div>
-              <div style={{ fontSize: '10px', fontFamily: 'Arian' }}>
-                <input
-                  type="text"
-                  className="input-field"
-                  placeholder="Name"
-                  name="name"
-                />
+      <section>
+        <div class="container">
+          <div class="contactinfo">
+            <div>
+              <h2>Contact Info</h2>
+              <div>
+                <ul class="info">
+                  <li>
+                    <span>
+                      <img
+                        src="location.png"
+                        alt="location"
+                        width="100"
+                        height="50"
+                      />
+                    </span>
+                    <span>
+                      835 Pump House Ln
+                      <br />
+                      West Chester, PA
+                      <br />
+                      19382
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <img
+                        src="mail.png"
+                        alt="mail"
+                        width="100"
+                        height="50"
+                      ></img>{' '}
+                    </span>
+                    <span>gsrana480@gmail.com</span>
+                  </li>
+                  <li>
+                    <span>
+                      <img src="call.png" alt="call" height="40" width="100" />
+                    </span>
+                    <span>407-450-9757</span>
+                  </li>
+                </ul>
               </div>
-              <div className="col-8 form-group pt-2 mx-auto">
-                <input
-                  type="email"
-                  className="input-field"
-                  placeholder="Email Address"
-                  name="email"
-                />
+              <ul class="sci">
+                <li>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100010821227821"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="facebook.png"
+                      alt="facebook"
+                      width="30"
+                      height="30"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://twitter.com/gsrana480"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="twitter.png"
+                      alt="twitter"
+                      width="30"
+                      height="30"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/gsrana1/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="linkedin.png"
+                      alt="linkedin"
+                      width="30"
+                      height="30"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/gsrana92"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src="github.png" alt="github" width="30" height="30" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <form onSubmit={this.onSubmitEmail}>
+            <div class="contactForm">
+              <h2>Send a message</h2>
+              <div class="formBox">
+                <div class="inputBox w50">
+                  <input type="text" name="firstName" required />
+                  <span>First Name</span>
+                </div>
+                <div class="inputBox w50">
+                  <input type="text" name="lastName" required />
+                  <span>Last Name</span>
+                </div>
+                <div class="inputBox w50">
+                  <input type="text" name="email" required />
+                  <span>Email</span>
+                </div>
+                <div class="inputBox w50">
+                  <input type="text" name="phone" required />
+                  <span>Mobile Number</span>
+                </div>
+                <div class="inputBox w50">
+                  <textarea name="message" required></textarea>
+                  <span>Write your message here...</span>
+                </div>
+                <div class="inputBox w100">
+                  <input type="submit" value="Send" />
+                </div>
+                {/*   <div className={this.state.sent ? 'msg msgAppear' : 'msg'}>
+                  Message has been sent
+    </div>*/}
               </div>
-              <div className="col-8 form-group pt-2 mx-auto">
-                <input
-                  type="text"
-                  className="input-field"
-                  placeholder="Subject"
-                  name="subject"
-                />
-              </div>
-              <div className="col-8 form-group pt-2 mx-auto">
-                <textarea
-                  className="input-field-message"
-                  id=""
-                  cols="30"
-                  rows="8"
-                  placeholder="Your message"
-                  name="message"
-                  style={{ font: 'Arial' }}
-                ></textarea>
-              </div>
-              <div className="col-8 pt-3 mx-auto">
-                <button className="button-send">Send</button>
-              </div>
-            </form>
-          </Cell>
-        </Grid>
-      </div>
+            </div>
+          </form>
+        </div>
+      </section>
     );
   }
 }
