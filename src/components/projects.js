@@ -124,6 +124,48 @@ class Projects extends Component {
                 </CardMenu>
               </Card>
             </Cell>
+            <Cell col={4}>
+              <Card
+                shadow={5}
+                style={{
+                  minWidth: '100',
+                  margin: 'auto',
+                }}
+              >
+                <CardTitle
+                  style={{
+                    color: '#fff',
+                    height: '176px',
+                    background:
+                      'url(https://gsrana-aws-bucket.s3.amazonaws.com/movie-app.png) center / cover',
+                  }}
+                >
+                  Movie App
+                </CardTitle>
+                <CardText>
+                  An app to find out popular movies with their ratings.
+                </CardText>
+                <CardActions border>
+                  <Button
+                    colored
+                    href="https://github.com/gsrana92/movie-app"
+                    target="_blank"
+                  >
+                    Github
+                  </Button>
+                  <Button
+                    colored
+                    href="https://main.d35znfyrcg2shl.amplifyapp.com/"
+                    target="_blank"
+                  >
+                    Demo
+                  </Button>
+                </CardActions>
+                <CardMenu style={{ color: '#fff' }}>
+                  <IconButton name="share" />
+                </CardMenu>
+              </Card>
+            </Cell>
           </Grid>
         </div>
       );
