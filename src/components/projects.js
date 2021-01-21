@@ -99,7 +99,7 @@ class Projects extends Component {
                     color: '#fff',
                     height: '176px',
                     background:
-                      'url(https://raddevon.com/wp-content/uploads/2018/10/react.jpg) center / cover',
+                      'url(https://gsrana-aws-bucket.s3.amazonaws.com/Expensify.png) center / cover',
                   }}
                 >
                   Expensify App
